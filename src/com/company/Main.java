@@ -18,12 +18,18 @@ public class Main {
                     password = myScanner.nextLine();
                     if(usernam == username && passwor == password)
                 lol=false;
-            } else {
+            } else if (ino.matches("sign up")){
                 System.out.println("What would you like your username to be? ");
                 usernam = myScanner.nextLine();
                 System.out.println("What would you like your password to be? ");
                 password = myScanner.nextLine();
                 lol = true;
+            }
+            else if(ino.matches("Y33T")) {
+                System.out.println("Yeet!");
+            }
+            else{
+                System.out.println("That was not an option");
             }
         }while(lol!=false);
 
